@@ -92,18 +92,18 @@ const CartPage = () => {
                           onChange={(e) => handleQuantityChange(e, item.id)}
                         />
                       </div>
-                      <a className="cart-box__close_icon" onClick={() => handleRemoveItem(item.id)}>
+                      <button className="cart-box__close_icon" onClick={() => handleRemoveItem(item.id)}>
                         <CloseIcon />
-                      </a>
+                      </button>
                     </div>
                   );
                 })}
               </div>
               <div className="cart-box__buttons">
                 <div className="cart-box__shopping_button">
-                  <a className="cart-box__shopping_button_title" onClick={handleClearCart}>
+                  <button className="cart-box__shopping_button_title" onClick={handleClearCart}>
                     Clear shopping cart
-                  </a>
+                  </button>
                 </div>
                 <div className="cart-box__shopping_button">
                   <Link className="cart-box__shopping_button_title" to="/catalog">
@@ -139,9 +139,9 @@ const CartPage = () => {
                 required
               />
               <div className="cart-box__shipping_button">
-                <a className="cart-box__shipping_button_title" href="#">
+                <button className="cart-box__shipping_button_title" href="#">
                   GET A QUOTE
-                </a>
+                </button>
               </div>
             </div>
             <div className="cart-box__checkout-box">
@@ -155,9 +155,9 @@ const CartPage = () => {
               </div>
               <hr className="cart-box__checkout-line" />
               <div className="cart-box__checkout-button">
-                <a className="cart-box__checkout_button_title" href="#">
+                <button className="cart-box__checkout_button_title" href="#">
                   PROCEED TO CHECKOUT
-                </a>
+                </button>
               </div>
             </div>
           </div>
